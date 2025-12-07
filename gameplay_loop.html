@@ -2,81 +2,77 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-  <title>Gameplay Loop (ROUGH DRAFT)</title>
+  <title>Gameplay Loop</title>
 </head>
 
 <body>
   <header>
-    <div class="logo"><a href="intro.html">Logo</a></div>
+    <div class="logo"><a href="index.html">Landing</a></div>
     <nav>
       <a href="level_design.html">Level Design</a>
-      <a href="gameplay_loop.html">Gameplay Loop</a>
+      <a href="gameplay_loop.html" aria-current="page">Gameplay Loop</a>
       <a href="dev_relations.html">Dev. Relations</a>
-      <a href="#">Conclusion</a>
+      <a href="conclusion.html">Conclusion</a>
     </nav>
   </header>
 
   <div>
-    <section class="ttsection">
-      <h1 class="main-title">Gameplay Loop</h1>
+    <article class="ttsection" id="gameplay-article" aria-labelledby="main-title">
+      <h1 id="main-title" class="main-title">Gameplay Loop</h1>
 
-      <div class="intro-text">
+      <p class="intro-text" id="intro-text">
         Abiotic Factor's premise hinges on the idea that instead of being a battle-hardened soldier with experience in hazardous
         environments, you are in the position of an average worker, a standard scientist beginning their first day at the GATE
         Cascade research facility, the main setting of the game. And much like a scientist, the gameplay of Abiotic Factor encourages one main philosophies while playing, and it's
         brains over brawn. The game encourages these philosophy in more subtle ways as you play
         through the game, and to explore these subtleties, we must look at one of the central mechanics of Abiotic Factor,
         portal worlds.
-      </div>
+      </p>
 
       <h2 class="section-title">Portal Worlds</h2>
       
-      <div class="split-section">
-        <div class="img-placeholder"></div>
-        <div class="right-text">
+      <div class="split-section" role="group">
+        <img class="img-placeholder" src="media/anteverse.jpg" alt="An image of a blue floating island in an alien dimension. There's dense fauna growning over the island and other taller islands surrounding it.">
+        <p class="right-text" id="portal-world-paragraph">
           What are portal worlds? They are unique environments that take place outside of the facility itself. They come in a
           variety of locations, some being other locations on Earth, but many take place in alternate dimensions dubbed
           "Anteverses." Ultimately, they all function the same mechanically. Every three in-game days, all of the enemies and
           resources found within the environment will reset, allowing for a practically endless supply of most materials in the
           game as long as you keep visiting them after the periodic reset.
-        </div>
+        </p>
       </div>
 
-      <div class="wide-text">
+      <p class="wide-text" id="flathill-paragraph">
         Within the first few hours of the game, you will eventually stumble upon the first couple of portal worlds in the game,
         but the first instances of being able to use brains over brute force can be found in the game's second portal world,
         Flathill. On your first visit to this foggy town, you will have to navigate on foot to various buildings, collecting
         power cells to open up portals to access previously blocked off areas of the town. However, when getting the last power
         cell, you'll have to not only navigate past multiple large, invulnerable enemies named composers, but also ascend a
         large tower, requiring a considerable amount of platforming to reach the top.
-      </div>
-      <div class="large-img"></div>
+      </p>
 
-      <div class="wide-text">
+
+      <p class="wide-text" id="shortcuts-paragraph">
         There are a few ways to mitigate these obstacles; the first is to unlock some caged ladders, which act as a direct
         shortcut without needing to collect power cells to open portals. However, you still have to navigate through the
         skyscraper to reach the exit. This opens up the second solution, Rope plants. Found in a portal world hours later into
         the game, they act as an easy means to ascend and descend massive heights. By placing one of these Rope plants at the
         very top of the tower, you can skip going inside the tower, saving a significant chunk of time.
+      </p>
+      
+      <div class="video">
+        <video width="640" height="360" autoplay loop aria-label="">
+          <source src="media/flathill.mp4" type="video/mp4">
+        </video>
       </div>
-
-      <div class="wide-text">
+      <p class="wide-text" id="gameplay-conclusion">
         And there are plenty of instances of this kind of problem-solving in Abiotic Factor, where it drip-feeds tools to
         circumvent. Towards the end of the game, you'll get deployable items that prevent future spawning of certain enemy
         types, among multiple different options for rapid transport, allowing you to cut significant chunks of time off
         traveling to the entrance portals.
-      </div>
+      </p>
 
-    </section>
+    </article>
   </div>
-
-  <footer>
-    <div class="footer-links">
-      <a href="#">Link one</a>
-      <a href="#">Link two</a>
-      <a href="#">Link three</a>
-      <a href="#">Link four</a>
-    </div>
-  </footer>
 </body>
 </html>

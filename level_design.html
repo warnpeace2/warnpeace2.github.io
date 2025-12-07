@@ -1,26 +1,26 @@
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-  <title>Level Design (ROUGH DRAFT)</title>
+  <title>Level Design</title>
+  
 </head>
-
 <body>
   <header>
-    <div class="logo"><a href="intro.html">Logo</a></div>
+    <div class="logo"><a href="index.html">Landing</a></div>
     <nav>
-      <a href="level_design.html">Level Design</a>
+      <a href="level_design.html" aria-current="page">Level Design</a>
       <a href="gameplay_loop.html">Gameplay Loop</a>
       <a href="dev_relations.html">Dev. Relations</a>
-      <a href="#">Conclusion</a>
+      <a href="conclusion.html">Conclusion</a>
     </nav>
   </header>
 
   <div>
-    <section class="ttsection">
-      <h1 class="main-title">Level Design</h1>
+    <article class="ttsection" aria-labelledby="main-title">
+      <h1 id="main-title" class="main-title">Level Design</h1>
 
-      <div class="intro-text">
+      <p class="intro-text" id="intro-text">
         When most people think about the identity of the survival-crafting genre, they often look towards the titans of the
         genre, such as Minecraft or Terraria. People think of players being dropped into a vast, often endless, open-world
         wilderness, with a plethora of different environments to explore, harboring unique resources to craft better equipment.
@@ -29,46 +29,42 @@
         2015, Tyler Wilde argues that "...this constant stream of glitchy Early Access ‘me too’ games feels like a lot of wasted
         talent. There are so many clones to sift through that I've lost faith in the whole genre."
         <a href="https://www.pcgamer.com/face-off-has-the-open-world-survival-genre-run-its-course/">(1)</a>
-      </div>
+      </p>
 
-      <h2 class="section-title">H2 Header here</h2>
+      <h2 class="section-title">Handmade Environments</h2>
 
-      <div class="split-section">
-        <div class="img-placeholder"></div>
-        <div class="right-text">
+      <div class="split-section" role="group">
+        <img class="img-placeholder" src="media/officehub-ground.jpg" alt="An image of Abiotic Factor's central hub area from a ground perspective. []">
+        <p class="right-text" id="pre-design-paragraph">
           Abiotic Factor deviates from this formula by opting to have a static, pre-designed environment. This alone isn't too out
           of the ordinary for survival games; notable titles such as The Forest and Grounded have implemented a similar level
           design philosophy in their games. However, Abiotic Factor takes advantage of having a handmade environment and manages
           to be even more unconventional in its genre through the implementation of a de facto hub area through the game's very
           first zone, the Office Sector.
-        </div>
+        </p>
       </div>
 
-      <div class="wide-text">
+      <p class="wide-text" id="progression-paragraph">
         Essentially, as you progress through the story, you visit more and more of the facility's sectors. Most of them are
         designed to be reached linearly, each having a path to an immediate past or future sector relative in the story.
         However, every single sector in the game can ultimately have a shortcut that leads straight back to the Office Sector,
         making travel significantly easier. This level design trope has drawn numerous comparisons to the Dark Souls series of
         games, where players can unlock previously locked shortcuts, sometimes several dozen hours into the game, back to the
         hub area of the game.
-      </div>
-      <div class="large-img"></div>
+      </p>
 
-      <div class="wide-text">
+      <div class="video">
+        <video width="640" height="360" autoplay loop aria-label="Gameplay footage of a player traveling from the 'Manufacturing West' sector, to the central hub in 'Office sector' in a tram">
+          <source src="media/tram.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <p class="wide-text" id="level-design-conclusion">
         Both games end up achieving the same effect, making their worlds feel cohesive and helping the player immerse themselves
         in their respective settings. By having all sectors of the facility lead back to a single area it makes the facility
         feel like a tangible location with actual thought in its layout.
-      </div>
-    </section>
+      </p>
+    </article>
   </div>
-
-  <footer>
-    <div class="footer-links">
-      <a href="#">Link one</a>
-      <a href="#">Link two</a>
-      <a href="#">Link three</a>
-      <a href="#">Link four</a>
-    </div>
-  </footer>
 </body>
 </html>

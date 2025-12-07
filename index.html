@@ -2,49 +2,53 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-  <title>Intro (ROUGH DRAFT)</title>
+  <title>Landing</title>
 </head>
 
 <body>
-  <header>
-    <div class="logo">Logo</div>
-    <nav>
-      <a href="level_design.html">Level Design</a>
-      <a href="#">Gameplay Loop</a>
-      <a href="#">Dev. Transparency</a>
-      <a href="#">Conclusion</a>
+  <header role="banner">
+    <div class="logo"><a href="index.html" aria-current="page" aria-label="Landing page">Landing</a></div>
+    <nav role="navigation" aria-label="Main Navigation">
+      <a href="level_design.html" aria-label ="Page discussing Abiotic Factor's level design">Level Design</a>
+      <a href="gameplay_loop.html" aria-label ="Page discussing Abiotic Factor's Gameplay loop">Gameplay Loop</a>
+      <a href="dev_relations.html" aria-label="Page discussing Abiotic Factor's player and developer relations">Dev. Relations</a>
+      <a href="conclusion.html" aria-label="Page discussing connection between all previous pages">Conclusion</a>
     </nav>
   </header>
 
-  <section class="content">
+  <section class="content" role="region" aria-labelledby="main-title">
     <div class="title-block">
-      <h1>What is Abiotic<br>Factor?</h1>
-      <p>Note: The following site is the current rough draft of my CS176 final project. It is in no way reflective of the final draft, and will be subject to numerous style adjustments and page additions as testing continues over the next few days.</p>
+      <h1 id="main-title">What is Abiotic<br>Factor?</h1>
+      <p>Abiotic Factor is a survival-crafting game released in July 2025. Set in the depths of the GATE Cascade facility, an underground research facility in the middle of the Australian desert studying anomalous phenomena, your first day as a scientist is disrupted by an otherworldly containment breach and a military incursion. This game draws influence from many popular Sci-Fi horror, namely the SCP Foundation and Half-Life series of games. </p>
     </div>
 
-    <img class="img-placeholder" src="ss_f57e6a13592c1dee5d903218e31d4add71dbaa83.1920x1080.jpg">
+    <div class="img-placeholder" src="" alt="Cycling video footage of Abiotic Factor gameplay from various update trailers.">
+      <iframe width="640" height="360" src="https://www.youtube.com/watch?v=cvOdt_cKk6M?autoplay=1&mute=1">
+
+      </iframe>
+    </div>
   </section>
 
-  <section class="topics">
-    <div class="t-box">
-      <div class="img-placeholder"></div>
+  <section class="topics" role="region" aria-label="Topics">
+    <div class="t-box" role="article">
+      <img class="img-placeholder" src="media/officehub-top.jpg" alt=" An image of Abiotic Factor's central hub area from a top-down perspective. There's an elevated floor with various stairs leading down in different directions, and a security office in the upper-right corner.">
       <h3>Level Design</h3>
       <p>Learn how Abiotic Factor deviates and takes inspiration in level design from an unlikely source.</p>
-      <a class="read-more" href="#">Read more</a>
+      <a class="read-more" href="level_design.html">Read more</a>
     </div>
 
-    <div class="t-box">
-      <div class="img-placeholder"></div>
+    <div class="t-box" role="article">
+      <img class="img-placeholder" src="media/portal.jpg"alt="An image of a flat, circular portal with stars inside. There's large machinery surrounding the portal.">
       <h3>Gameplay Loop</h3>
       <p>Abiotic Factor presents a unique approach to resource gathering, interwoven seamlessly into its lore.</p>
-      <a class="read-more" href="#">Read more</a>
+      <a class="read-more" href="gameplay_loop.html">Read more</a>
     </div>
 
-    <div class="t-box">
-      <div class="img-placeholder"></div>
-      <h3>Dev. Transparency</h3>
+    <div class="t-box" role="article">
+      <img class="img-placeholder" src="media/abiotic-factor-2024-roadmap-featured.png" alt="An image of Abiotic Factor's developer roadmap.">
+      <h3>Dev. Relations</h3>
       <p>How does Deep Field Games listen to feedback and present upcoming content in a personable manner?</p>
-      <a class="read-more" href="#">Read more</a>
+      <a class="read-more" href="dev_relations.html">Read more</a>
     </div>
   </section>
 </body>
