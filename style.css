@@ -73,20 +73,8 @@ a.read-more {
   text-decoration: underline;
 }
 
-footer {
-  background: #00578d8e;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 60px;
-}
-
-.footer a {
-  margin-right: 30px;
+.logo {
   text-decoration: none;
-  color: #000;
-  font-size: 14px;
 }
 
 /* TOPIC TEMPLATE */
@@ -236,3 +224,4 @@ footer {
   }
 
 }
+
